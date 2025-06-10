@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanani's Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec;
+            color: #424242;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #e91e63;
+        }
+        
+        .btn {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .celebration {
+            padding: 40px;
+        }
+        
+        .message {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        
+        .collage img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #e91e63;
+            transition: transform 0.3s;
+        }
+        
+        .collage img:hover {
+            transform: scale(1.1);
+        }
+        
+        .count-up-container {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 2px dashed #e91e63;
+        }
+        
+        .count-up-container p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+        
+        .count-up {
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+        
+        .count-up span {
+            font-size: 1.2em;
+            color: #e91e63;
+            font-weight: bold;
+        }
+        
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px;
+            animation: explode 1s ease-out infinite;
+            opacity: 0;
+        }
+        
+        @keyframes explode {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(20);
+                opacity: 0;
+            }
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f44336;
+            opacity: 0;
+            animation: confettiFall 5s linear infinite;
+        }
+        
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main-page">
+        <h1>For My Beautiful Hanani</h1>
+        <button class="btn" id="birthday-btn">Hanani's Bday!</button>
+    </div>
+    
+    <div class="celebration hidden" id="celebration-page">
+        <div class="collage">
+            <!-- Replace these with actual image paths -->
+            <img src="https://placekitten.com/300/300" alt="Happy moment">
+            <img src="https://placekitten.com/301/301" alt="Happy moment">
+            <img src="https://placekitten.com/302/302" alt="Happy moment">
+            
+        </div>
+        
+        <div class="message">
+            <h2>Happy Birthday Hanani! 🎉</h2>
+            <p>My cutest dearest baby, today is ur day my babyyy, the world really got lucky to have you born my baby and i am the more luckiest human being ever to have you in my life my love.
+I know that everything we have been thru isnt easy albe and we worked our way out of everything together and today i want to celebrate your birthday in a special way. I want you to be happy and i wanna do my best to achieve that for you and for us to he happy together. You literally made my life better since the day i met you and i got to know you on a deeper level, even tho u get on my nerves sometimes u ass🙄 bas still nothing can ever happen will make me love you less. I love you with all my soul and heart. I need you everyday and everymoment of my life, i am so happy to celebrate this day with you my cutie. Yala now ure the same age as me hehe so take advantage of it hehe.
+I know i might not be the best especially lately but i promise you everything will be better and we will celebrate our birthdays together face to face and it will be the best day ever, we will meet our bday in the middle and celebrate together. 
+I love you so so much my baby. You literally own my soul i say it everytime and i mean it everytime ya 3omre ente❤️❤️🌍🌍
+Everything in my life i want it to be with you and i dont want anyone in my life ghayrik ya rouhe ente. I will give you everything and make everything better for us ya hobi❤️❤️🌍🌍
+My cutiee hananii  the way u make me feel its indescribable baby , i wake up every morning to the dream of being ur man and i promise that making you happy will he my everyday everything. I love you so so much❤️❤️🌍🌍 </p>
+            <p>I'm so grateful to celebrate another year of your wonderful life. Here's to many more birthdays together!</p>
+            <p>With all my love,</p>
+            <p>[Your Name]</p>
+            
+            <div class="count-up-container">
+                <p>The world got lucky since June 11, 2002:</p>
+                <div class="count-up" id="count-up-timer">
+                    <span id="years">0</span> years,
+                    <span id="months">0</span> months,
+                    <span id="days">0</span> days,
+                    <span id="hours">0</span> hours,
+                    <span id="minutes">0</span> minutes, and
+                    <span id="seconds">0</span> seconds!
+                </div>
+            </div>
+        </div>
+        
+        <div class="collage">
+            <img src="https://placekitten.com/306/306" alt="Happy moment">
+            <img src="https://placekitten.com/307/307" alt="Happy moment">
+            <img src="https://placekitten.com/308/308" alt="Happy moment">
+           
+        </div>
+    </div>
+    
+    <audio id="birthday-song" loop>
+        <source src="Happy Birthday song Romantic version  romantic piano version.mp3" type="audio/mpeg">
+        <!-- Replace with actual birthday song -->
+    </audio>
+    
+    <script>
+        document.getElementById('birthday-btn').addEventListener('click', function() {
+            // Hide main page
+            document.getElementById('main-page').classList.add('hidden');
+            
+            // Show celebration page
+            document.getElementById('celebration-page').classList.remove('hidden');
+            
+            // Play birthday song
+            document.getElementById('birthday-song').play();
+            
+            // Create fireworks
+            createFireworks();
+            createConfetti();
+            
+            // Start count-up timer
+            startCountUp();
+        });
+        
+        function createFireworks() {
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+            
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'firework';
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 100 + 'vh';
+                    firework.style.color = colors[Math.floor(Math.random() * colors.length)];
+                    document.body.appendChild(firework);
+                    
+                    // Remove firework after animation
+                    setTimeout(() => {
+                        firework.remove();
+                    }, 1000);
+                }, i * 300);
+            }
+        }
+        
+        function createConfetti() {
+            const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107', '#FF9800', '#FF5722'];
+            
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                    document.body.appendChild(confetti);
+                    
+                    // Remove confetti after animation
+                    setTimeout(() => {
+                        confetti.remove();
+                    }, 5000);
+                }, i * 100);
+            }
+            
+            // Keep creating confetti
+            setInterval(() => {
+                createConfetti();
+            }, 3000);
+        }
+        
+        function startCountUp() {
+            const birthDate = new Date(2002, 5, 11); // June 11, 2002 (months are 0-indexed)
+            
+            function updateCountUp() {
+                const now = new Date();
+                
+                // Calculate total difference in years
+                let years = now.getFullYear() - birthDate.getFullYear();
+                
+                // Check if birthday hasn't occurred yet this year
+                if (now.getMonth() < birthDate.getMonth() || 
+                    (now.getMonth() === birthDate.getMonth() && now.getDate() < birthDate.getDate())) {
+                    years--;
+                }
+                
+                // Calculate months
+                let months = now.getMonth() - birthDate.getMonth();
+                if (months < 0) {
+                    months += 12;
+                }
+                
+                // Adjust months if current date is before birth date in the month
+                if (now.getDate() < birthDate.getDate()) {
+                    months--;
+                    if (months < 0) {
+                        months = 11;
+                    }
+                }
+                
+                // Calculate days
+                const tempDate = new Date(now);
+                tempDate.setMonth(now.getMonth() - months);
+                tempDate.setDate(birthDate.getDate());
+                
+                let days;
+                if (now.getDate() >= birthDate.getDate()) {
+                    days = now.getDate() - birthDate.getDate();
+                } else {
+                    const lastDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+                    days = lastDayOfMonth - birthDate.getDate() + now.getDate();
+                }
+                
+                // Get current time
+                const hours = now.getHours();
+                const minutes = now.getMinutes();
+                const seconds = now.getSeconds();
+                
+                // Display the result
+                document.getElementById('years').innerText = years;
+                document.getElementById('months').innerText = months;
+                document.getElementById('days').innerText = days;
+                document.getElementById('hours').innerText = hours;
+                document.getElementById('minutes').innerText = minutes;
+                document.getElementById('seconds').innerText = seconds;
+            }
+            
+            // Update immediately and then every second
+            updateCountUp();
+            setInterval(updateCountUp, 1000);
+        }
+    </script>
+</body>
+</html>
